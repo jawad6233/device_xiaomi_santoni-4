@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The Havoc-OS Project
+# Copyright (C) 2019 The SuperiorOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,21 +16,18 @@
 
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
-# Inherit some common Revenge OS stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common SuperiorOS stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := derp_santoni
+PRODUCT_NAME := superior_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Official
-DERP_BUILDTYPE=Official
-
-#Updater json
-FORCE_JSON=1
+#OFFICIAL
+export SUPERIOR_OFFICIAL=true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720

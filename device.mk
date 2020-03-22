@@ -209,7 +209,7 @@ PRODUCT_PROPERTY_OVERRIDES += debug.hwui.use_buffer_age=false
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.1-service.custom
+    android.hardware.power@1.2-service.custom
 
 # DRM
 PRODUCT_PACKAGES += \
